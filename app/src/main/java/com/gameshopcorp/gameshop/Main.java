@@ -1,12 +1,12 @@
 package com.gameshopcorp.gameshop;
 
+import com.gameshopcorp.gameshop.gui.MyStartScreen;
 import com.jme3.app.SimpleApplication;
 import com.jme3.material.Material;
 import com.jme3.math.ColorRGBA;
 import com.jme3.niftygui.NiftyJmeDisplay;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.shape.Box;
-import com.jme3.texture.Texture;
 
 import java.util.logging.Logger;
 
@@ -19,6 +19,8 @@ public class Main extends SimpleApplication {
     private static final Logger logger = Logger.getLogger(Main.class.getName());
 
     public void simpleInitApp() {
+
+        flyCam.setEnabled(false);
 
         Box box = new Box(1, 1, 1);
         Geometry geom = new Geometry("box", box);

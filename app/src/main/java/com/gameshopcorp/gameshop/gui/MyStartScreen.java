@@ -1,4 +1,4 @@
-package com.gameshopcorp.gameshop;
+package com.gameshopcorp.gameshop.gui;
 import com.jme3.app.Application;
 import com.jme3.app.state.BaseAppState;
 import de.lessvoid.nifty.Nifty;
@@ -8,7 +8,7 @@ import de.lessvoid.nifty.screen.ScreenController;
 public class MyStartScreen extends BaseAppState implements ScreenController {
 
     @Override
-    protected void initialize(Application app) {
+    public void initialize(Application app) {
         //It is technically safe to do all initialization and cleanup in the
         //onEnable()/onDisable() methods. Choosing to use initialize() and
         //cleanup() for this is a matter of performance specifics for the
