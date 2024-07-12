@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty xmlns="http://nifty-gui.sourceforge.net/nifty-1.3.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nifty-gui.sourceforge.net/nifty-1.3.xsd http://nifty-gui.sourceforge.net/nifty-1.3.xsd">
+
+    <!-- start screen -->
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+<screen id="GScreen0" controller="com.gameshopcorp.gameshop.MyStartScreen">
+    <!--
+    <layer childLayout="center">
+        <text color="#ffff" font="aurulent-sans-16.fnt" text="Hello World!" align="center" valign="center"/>
+    </layer>
+    -->
+
+    <layer id="GLayer0" childLayout="center">
+        <panel id="panel_left" width="20%" height="100%" childLayout="vertical">
+
+
+        </panel>
+        <panel id="panel_middle" width="60%" height="100%" childLayout="vertical">
+            <panel id="panel_middle_top" width="100%" height="20%" childLayout="vertical"></panel>
+            <panel id="panel_middle_icon" width="100%" height="30%" childLayout="vertical">
+                <image filename="Interface/rune_icon-playstore.png" childLayout="vertical">
+                </image>
+            </panel>
+            <panel id="panel_middle_space" width="100%" height="20%" childLayout="vertical"></panel>
+            <panel id="panel_middle_button" width="100%" height="20%" childLayout="vertical">
+                <text color="#ffff" font="aurulent-sans-16.fnt" text="Hello World!" align="vertical" valign="center"/>
+
+            </panel>
+
+
+        </panel>
+        <panel id ="panel_right" width="20%" height="100%" childLayout="vertical"> </panel>
+    </layer>
+
+</screen>
+    </nifty>
