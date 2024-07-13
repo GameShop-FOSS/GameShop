@@ -28,7 +28,7 @@
 
             </panel>
 
-        <panel id="panel_middle_button" width="100%" height="20%" backgroundColor="#44ff" childLayout="center">
+        <panel id="panel_middle_button" width="100%" height="20%" backgroundColor="#1aef" childLayout="center">
 
                 <text color="#ffff"   font="Interface/Fonts/Ubuntu.fnt" text="Enter" align="center" valign="center"/>
             </panel>

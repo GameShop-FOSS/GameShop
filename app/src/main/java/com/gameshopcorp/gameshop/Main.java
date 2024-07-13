@@ -24,7 +24,7 @@ public class Main extends SimpleApplication {
     ParticleFactory particleFactory;
     public void simpleInitApp() {
 
-        viewPort.setBackgroundColor(ColorRGBA.fromRGBA255(10,155,223, 255));
+        //viewPort.setBackgroundColor(ColorRGBA.fromRGBA255(10,155,223, 255));
         flyCam.setEnabled(false);
 
 
@@ -65,7 +65,7 @@ public class Main extends SimpleApplication {
         guiViewPort.addProcessor(niftyDisplay);
 
         particleFactory = new ParticleFactory(this);
-        particleFactory.addParticle();
+        //particleFactory.addParticle();
 
     }
 
@@ -75,10 +75,12 @@ public class Main extends SimpleApplication {
         //TODO: add update code
 
         elapsedTime += tpf;
+        particleFactory.animateParticles();
         if (elapsedTime > 1f){
-
+            particleFactory.addParticle();
             elapsedTime = 0f;
         }
+        particleFactory.deleteExtraParticles();
         //System.out.println("tpf " + tpf);
     }
 
