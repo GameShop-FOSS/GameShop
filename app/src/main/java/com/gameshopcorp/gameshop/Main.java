@@ -3,13 +3,8 @@ package com.gameshopcorp.gameshop;
 import com.gameshopcorp.gameshop.gui.MyStartScreen;
 import com.gameshopcorp.gameshop.particles.ParticleFactory;
 import com.jme3.app.SimpleApplication;
-import com.jme3.material.Material;
-import com.jme3.math.ColorRGBA;
 import com.jme3.niftygui.NiftyJmeDisplay;
 import com.jme3.renderer.RenderManager;
-import com.jme3.scene.Geometry;
-import com.jme3.scene.shape.Box;
-import com.jme3.scene.shape.Quad;
 
 import java.util.logging.Logger;
 
@@ -54,12 +49,15 @@ public class Main extends SimpleApplication {
 
         MyStartScreen myStartScreen = new MyStartScreen();
         myStartScreen.initialize(this);
+//        GoogleSignInScreen googleSignInScreen = new GoogleSignInScreen();
+//        googleSignInScreen.initialize(this);
         NiftyJmeDisplay niftyDisplay = NiftyJmeDisplay.newNiftyJmeDisplay(
                 assetManager, inputManager, audioRenderer, guiViewPort);
 /** Create a new NiftyGUI object */
         Nifty nifty = niftyDisplay.getNifty();
 /** Read your XML and initialize your custom ScreenController */
         nifty.fromXml("Interface/screen.xml", "GScreen0", myStartScreen);
+        nifty.addXml("Interface/googlesignin.xml");
 // nifty.fromXml("Interface/helloworld.xml", "start", new MySettingsScreen(data));
 // attach the Nifty display to the gui view port as a processor
         guiViewPort.addProcessor(niftyDisplay);

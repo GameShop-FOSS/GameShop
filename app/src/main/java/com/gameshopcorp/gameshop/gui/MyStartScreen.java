@@ -7,6 +7,12 @@ import de.lessvoid.nifty.screen.ScreenController;
 
 public class MyStartScreen extends BaseAppState implements ScreenController {
 
+
+    Nifty nifty;
+    public void gotoScreen(String nextScreen){
+
+        nifty.gotoScreen(nextScreen);
+    }
     @Override
     public void initialize(Application app) {
         //It is technically safe to do all initialization and cleanup in the
@@ -53,6 +59,8 @@ public class MyStartScreen extends BaseAppState implements ScreenController {
     @Override
     public void bind(Nifty nifty, Screen screen) {
        // throw new UnsupportedOperationException("Not supported yet.");
+
+        this.nifty = nifty;
     }
 
     /**
@@ -69,5 +77,10 @@ public class MyStartScreen extends BaseAppState implements ScreenController {
     @Override
     public void onEndScreen() {
        // throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void gotoGoogleSignIn(){
+        System.out.println("Hi");
+        nifty.gotoScreen("googlesignin");
     }
 }
