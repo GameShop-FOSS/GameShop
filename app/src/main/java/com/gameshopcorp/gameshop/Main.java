@@ -74,7 +74,7 @@ public class Main extends SimpleApplication {
 
         elapsedTime += tpf;
         particleFactory.animateParticles();
-        if (elapsedTime > 1f){
+        if (elapsedTime > .25f){
             particleFactory.addParticle();
             elapsedTime = 0f;
         }

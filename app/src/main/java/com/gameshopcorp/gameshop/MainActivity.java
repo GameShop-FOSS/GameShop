@@ -1,21 +1,32 @@
 package com.gameshopcorp.gameshop;
 
 //import android.support.v4.app.AppCompatActivity;
+//import static java.security.AccessController.getContext;
+
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static AppCompatActivity self;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        self = this;
         // The "activity_main" layout includes the reference
         // to the fragment that contains the GLSurfaceView
         // that will be used to display the jME content.
         setContentView(R.layout.activity_main);
+
+//        @SuppressLint("HardwareIds") String android_id = Settings.Secure.getString(this.getContentResolver(),
+//                Settings.Secure.ANDROID_ID);
+//
+//        System.out.println("ANDROID ID: " + android_id);
 
     }
 
