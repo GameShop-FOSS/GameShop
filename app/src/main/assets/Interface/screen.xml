@@ -53,6 +53,25 @@
     <layer id="keyboard" childLayout="center" >
         <panel id="keyboardPanel" width="100%" height="50%" childLayout="center" backgroundColor="#ffff">
 
+            <panel id="row_one" width="100%" height="12.5%" childLayout="horizontal" backgroundColor="#aaaf">
+
+
+            </panel>
+            <panel id="row_q" width="100%" height="12.5%" childLayout="horizontal" backgroundColor="#aaaf">
+
+
+            </panel>
+            <panel id="row_a" width="100%" height="12.5%" childLayout="horizontal" backgroundColor="#aaaf">
+
+
+            </panel>
+            <panel id="row_z" width="100%" height="12.5%" childLayout="horizontal" backgroundColor="#aaaf">
+
+
+            </panel>
+
+
+
         </panel>
     </layer>
 </screen>
