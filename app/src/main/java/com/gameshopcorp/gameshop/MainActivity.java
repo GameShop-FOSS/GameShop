@@ -7,6 +7,7 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
+import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
         // that will be used to display the jME content.
         setContentView(R.layout.activity_main);
 
+         getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,
+                WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
+
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+//        findViewById(R.id.jMEFragment).setFocusable(true);
+//        findViewById(R.id.jMEFragment).setFocusableInTouchMode(true);
 //        @SuppressLint("HardwareIds") String android_id = Settings.Secure.getString(this.getContentResolver(),
 //                Settings.Secure.ANDROID_ID);
 //

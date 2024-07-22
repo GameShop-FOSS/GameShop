@@ -3,7 +3,7 @@
 
     <!-- start screen -->
     <!-- +++++++++++++++++++++++++++++++++++++++ -->
-    <screen id="googlesignin" controller="com.gameshopcorp.gameshop.gui.GoogleSignInScreen">
+    <screen id="googlesignin" controller="com.gameshopcorp.gameshop.gui.MyStartScreen">
         <!--
         <layer childLayout="center">
             <text color="#ffff" font="aurulent-sans-16.fnt" text="Hello World!" align="center" valign="center"/>
@@ -30,7 +30,7 @@
 
                 <panel id="panel_login_button" width="100%" height="10%" backgroundColor="#1aef" childLayout="center">
 
-                    <interact onClick="login()"/>
+                    <interact onClick="gotologinscreen()"/>
 <!--                    <image filename="Interface/android_dark_rd_ctn@4x.png" childLayout="vertical">-->
 
 <!--                    </image>-->
@@ -43,7 +43,7 @@
                 </panel>
                 <panel id="panel_signup_button" width="100%" height="10%" backgroundColor="#1aef" childLayout="center">
 
-                    <interact onClick="signUp()"/>
+                    <interact onClick="gotosignupscreen()"/>
                     <text color="#ffff" font="Interface/Fonts/Ubuntu.fnt" text="Sign Up" align="center" valign="center"/>
 
                     <!--                    <image filename="Interface/android_dark_rd_ctn@4x.png" childLayout="vertical">-->
@@ -59,6 +59,10 @@
             </panel>
             <panel id ="panel_right" width="20%" height="100%" childLayout="vertical"> </panel>
         </layer>
+        <layer id="keyboard" childLayout="center" >
+        <panel id="keyboardPanel" width="100%" height="50%" childLayout="center" backgroundColor="#ffff">
 
+        </panel>
+        </layer>
     </screen>
 </nifty>

@@ -5,6 +5,7 @@ import com.gameshopcorp.gameshop.particles.ParticleFactory;
 import com.jme3.app.SimpleApplication;
 import com.jme3.niftygui.NiftyJmeDisplay;
 import com.jme3.renderer.RenderManager;
+import com.jme3.system.JmeSystem;
 
 import java.util.logging.Logger;
 
@@ -21,6 +22,7 @@ public class Main extends SimpleApplication {
 
         //viewPort.setBackgroundColor(ColorRGBA.fromRGBA255(10,155,223, 255));
         flyCam.setEnabled(false);
+        JmeSystem.showSoftKeyboard(true);
 
 
 //        Box box = new Box(1, 1, 1);
@@ -58,6 +60,8 @@ public class Main extends SimpleApplication {
 /** Read your XML and initialize your custom ScreenController */
         nifty.fromXml("Interface/screen.xml", "GScreen0", myStartScreen);
         nifty.addXml("Interface/googlesignin.xml");
+        nifty.addXml("Interface/signup.xml");
+      //  nifty.addXml("Interface/login.xml");
 // nifty.fromXml("Interface/helloworld.xml", "start", new MySettingsScreen(data));
 // attach the Nifty display to the gui view port as a processor
         guiViewPort.addProcessor(niftyDisplay);

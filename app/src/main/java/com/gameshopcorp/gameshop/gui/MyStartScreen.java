@@ -5,11 +5,13 @@ import static android.content.Intent.parseUri;
 
 //import static com.jme3.app.state.ConstantVerifierState.ErrorType.Log;
 
-import static java.security.AccessController.getContext;
+//import static java.security.AccessController.getContext;
 
+import android.content.Context;
 import android.content.Intent;
 import android.provider.Settings;
 import android.util.Log;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -29,12 +31,14 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.installations.FirebaseInstallations;
 import com.jme3.app.Application;
 import com.jme3.app.state.BaseAppState;
+import com.jme3.system.JmeSystem;
 
 import java.net.URISyntaxException;
 import java.util.Objects;
 import java.util.concurrent.Executor;
 
 import de.lessvoid.nifty.Nifty;
+import de.lessvoid.nifty.elements.Element;
 import de.lessvoid.nifty.screen.Screen;
 import de.lessvoid.nifty.screen.ScreenController;
 
@@ -42,6 +46,7 @@ public class MyStartScreen extends BaseAppState implements ScreenController {
 
     FirebaseFirestore db;
 
+    Element keyboardLayer;
     String firebaseID;
     private static final String TAG = "EmailPassword";
     // [START declare_auth]
@@ -49,6 +54,7 @@ public class MyStartScreen extends BaseAppState implements ScreenController {
     // [END declare_auth]
 
     Nifty nifty;
+    Application app;
     public void gotoScreen(String nextScreen){
 
         nifty.gotoScreen(nextScreen);
@@ -62,6 +68,7 @@ public class MyStartScreen extends BaseAppState implements ScreenController {
         //TODO: initialize your AppState, e.g. attach spatials to rootNode
         // Access a Cloud Firestore instance from your Activity
 
+        this.app = app;
         //signInWithFireBase();
 
         // [START initialize_auth]
@@ -118,6 +125,25 @@ public class MyStartScreen extends BaseAppState implements ScreenController {
 
     public void login(){
 
+    }
+
+    public void keyboard(){
+
+//        String sequence = "";
+//
+//        InputMethodManager im = (InputMethodManager)MainActivity.self.getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+//        im.showSoftInput(MainActivity.self.findViewById(R.id.jMEFragment), InputMethodManager.SHOW_FORCED);
+
+        this.keyboardLayer.show();
+
+
+    }
+    public void gotosignupscreen(){
+        nifty.gotoScreen("signup");
+    }
+
+    public void gotologinscreen(){
+        nifty.gotoScreen("login");
     }
 //    private void createAccount(String email, String password) {
 //        // [START create_user_with_email]
@@ -258,6 +284,9 @@ public class MyStartScreen extends BaseAppState implements ScreenController {
        // throw new UnsupportedOperationException("Not supported yet.");
 
         this.nifty = nifty;
+        this.keyboardLayer = screen.findElementById("keyboard");
+        //assert this.keyboardLayer != null;
+        this.keyboardLayer.hide();
     }
 
     /**
