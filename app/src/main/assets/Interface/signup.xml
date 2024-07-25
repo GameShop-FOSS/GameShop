@@ -28,7 +28,7 @@
                 </panel>
                 <panel id="panel_middle_space" width="100%" height="20%" childLayout="center" backgroundColor="#ffff">
 <!--                    <text color="#ffff"  font="Interface/Fonts/Ubuntu.fnt" text="GameShop" align="center" valign="center"/>-->
-                    <text color="#000f"  font="Interface/Fonts/Ubuntu.fnt" text="" align="center" valign="center"/>
+<!--                    <text color="#000f"  font="Interface/Fonts/Ubuntu.fnt" text="" align="center" valign="center"/>-->
                     <interact onClick="keyboard()" />
 
                 </panel>
@@ -49,7 +49,7 @@
                 <panel id="panel_signup_button" width="100%" height="10%" backgroundColor="#1aef" childLayout="center">
 
                     <interact onClick="signUp()"/>
-                    <text color="#ffff" font="Interface/Fonts/Ubuntu.fnt" text="Sign Up" align="center" valign="center"/>
+<!--                    <text color="#ffff" font="Interface/Fonts/Ubuntu.fnt" text="Sign Up" align="center" valign="center"/>-->
 
                     <!--                    <image filename="Interface/android_dark_rd_ctn@4x.png" childLayout="vertical">-->
 
@@ -64,8 +64,203 @@
             </panel>
 <!--            <panel id ="panel_right" width="20%" height="100%" childLayout="vertical"> </panel>-->
         </layer>
+
         <layer id="keyboard" childLayout="center" >
-            <panel id="keyboardPanel" width="100%" height="50%" childLayout="center" backgroundColor="#ffff">
+            <panel id="keyboardPanel" width="100%" height="62.5%" childLayout="vertical" backgroundColor="#ffff">
+
+                <panel id="row_text" width="100%" height="12.5%" childLayout="horizontal" backgroundColor="#aaaf">
+
+                    <text id="text_input" color="#ffff" font="Interface/Fonts/Ubuntu.fnt" text="[Input Text Here]" align="center" valign="center"/>
+
+                </panel>
+                <panel id="row_one" width="100%" height="12.5%" childLayout="horizontal" backgroundColor="#aaaf">
+                    <panel id="key_one" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_one" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="1" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_two" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_two" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="2" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_three" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_three" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="3" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_four" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_four" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="4" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_five" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_five" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="5" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_six" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_six" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="6" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_seven" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_seven" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="7" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_eight" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_eight" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="8" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_nine" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_nine" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="9" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_zero" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_zero" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="0" align="center" valign="center"/>
+
+                    </panel>
+                </panel>
+                <panel id="row_q" width="100%" height="12.5%" childLayout="horizontal" backgroundColor="#aaaf">
+                    <panel id="key_q" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_q" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="q" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_w" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_w" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="w" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_e" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_e" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="e" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_r" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_r" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="r" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_t" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_t" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="t" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_y" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_y" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="y" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_u" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_u" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="u" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_i" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_i" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="i" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_o" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_o" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="o" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_p" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_p" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="p" align="center" valign="center"/>
+
+                    </panel>
+<!--                    <panel id="key_q" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">-->
+<!--                        <text id="text_q" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="q" align="center" valign="center"/>-->
+
+<!--                    </panel>-->
+
+                </panel>
+                <panel id="row_a" width="100%" height="12.5%" childLayout="horizontal" backgroundColor="#aaaf">
+
+                    <panel id="space_one" width="7.5%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+
+                    </panel>
+                    <panel id="key_a" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_a" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="a" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_s" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_s" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="s" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_d" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_d" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="d" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_f" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_f" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="f" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_g" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_g" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="g" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_h" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_h" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="h" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_j" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_j" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="j" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_k" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_k" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="k" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_l" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_l" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="l" align="center" valign="center"/>
+
+                    </panel>
+
+
+                </panel>
+                <panel id="row_z" width="100%" height="12.5%" childLayout="horizontal" backgroundColor="#aaaf">
+
+                    <panel id="space_two" width="15%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+
+                    </panel>
+                    <panel id="key_z" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_z" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="z" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_x" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_x" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="x" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_c" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_c" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="c" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_v" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_v" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="v" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_b" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_b" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="b" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_n" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_n" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="n" align="center" valign="center"/>
+
+                    </panel>
+                    <panel id="key_m" width="10%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                        <text id="text_m" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="m" align="center" valign="center"/>
+
+                    </panel>
+
+                </panel>
+
+            <panel id="row_aux" width="100%" height="12.5%" childLayout="horizontal" backgroundColor="#aaaf">
+
+                <panel id="key_shift" width="20%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                    <text id="text_shift" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="SHIFT" align="center" valign="center"/>
+
+                </panel>
+
+                <panel id="key_space" width="50%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                    <text id="text_space" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="__________" align="center" valign="center"/>
+
+                </panel>
+
+                <panel id="key_symbolic" width="20%" height="100%" childLayout="horizontal" backgroundColor="#aaaf">
+                    <text id="text_symbolic" color="#000f" font="Interface/Fonts/Ubuntu.fnt" text="!#1" align="center" valign="center"/>
+
+                </panel>
+
+            </panel>
+
 
             </panel>
         </layer>

@@ -284,9 +284,11 @@ public class MyStartScreen extends BaseAppState implements ScreenController {
        // throw new UnsupportedOperationException("Not supported yet.");
 
         this.nifty = nifty;
-        this.keyboardLayer = screen.findElementById("keyboard");
-        //assert this.keyboardLayer != null;
-        this.keyboardLayer.hide();
+        if (screen.getScreenId().equals("signup")) {
+            this.keyboardLayer = screen.findElementById("keyboard");
+
+            this.keyboardLayer.hide();
+        }
     }
 
     /**
